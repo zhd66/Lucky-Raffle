@@ -2,13 +2,13 @@
 version: '3.9'
 services:
   mysql:
-    image: mysql:8.0.32
+    image: mysql:8.0.36
     container_name: mysql
     command: --default-authentication-plugin=mysql_native_password
     restart: always
     environment:
       TZ: Asia/Shanghai
-      MYSQL_ROOT_PASSWORD: 123456
+      MYSQL_ROOT_PASSWORD: 123
     networks:
       - my-network
     depends_on:
